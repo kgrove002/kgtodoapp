@@ -1,0 +1,64 @@
+p {
+    text-indent: 1rem;
+    font-size: 1.2rem;
+}
+
+.headings{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.HowToBtn {
+    color: forestgreen;
+    padding: 1.25rem;
+    font-size: 1.75rem;
+    width: 75%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-link {
+    color: inherit;            
+    text-decoration: none;     
+    display: inline-block;    
+    width: 100%;               
+    height: 100%;              
+    text-align: center;       
+}
+
+.showDesktopContain,
+.showWebContain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.desktopContain,
+.webContain {
+    background-color: rgb(237, 236, 236);
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.desktopToggle,
+.webToggle {
+    color: forestgreen;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+}
+
+.desktopContain img,
+.webContain img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}

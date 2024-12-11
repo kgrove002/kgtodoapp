@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/howTo.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+        <title>How To Use KG To Do App</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="header">
+                <h1>KG To Do App</h1>
+                <h1>Developed by: Kevin Grove</h1>
+            </div>
+
+            <nav class="Nav">
+                <ul>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="https://kgrove.github.io/kgtodoapp/app">Web App Login</a>
+                </li>
+                <li>                
+                    <a href="HowTo.html">How To Use & Download</a>
+                </li>
+                <li>                
+                    <a href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </nav>
+
+            <div class="HowTo container">
+                
+            <h1 class="headings">Download The Desktop App!</h1>
+
+            <p>If you would like to download the desktop application for this web application, please click the link below. If you need assistance using the application, please refer to the instructions provided below.</p>
+
+            <div class="button-container">
+                <button type="button" class="HowToBtn btn btn-dark">
+                    <a href="downloads/KG To Do APP.7z" download="KG To Do App.7z" class="download-link">
+                        Download Desktop App!
+                    </a>
+                </button>
+            </div>
+
+            <section class="desktopContain">
+                <div class="showDesktopContain">
+                    <h1 class="headings">How To Use Desktop App</h1>
+                    <button @click="toggleShowDesktop" class="desktopToggle btn-dark">
+                        <span v-if="showDesktop">Hide Content</span>
+                        <span v-else>Show Content</span>
+                    </button>
+                </div>
+                <div v-if="showDesktop">
+                    <div v-for="(step, index) in desktopSteps" :key="index" class="instruction-step">
+                        <h2>{{ step.title }}</h2>
+                        <p>{{ step.description }}</p>
+                        <img :src="step.image" :alt="step.alt">
+                    </div>
+                </div>
+            </section>             
+            
+            <section class="webContain">
+                <div class="showWebContain">
+                    <h1 class="headings">How To Use Web Based App</h1>
+                    <button @click="toggleShowWeb" class="webToggle btn-dark">
+                        <span v-if="showWeb">Hide Content</span>
+                        <span v-else>Show Content</span>
+                    </button>
+                </div>
+                <div v-if="showWeb">
+                    <div v-for="(step, index) in webSteps" :key="index" class="instruction-step">
+                        <h2>{{ step.title }}</h2>
+                        <p>{{ step.description }}</p>
+                        <img :src="step.image" :alt="step.alt">
+                    </div>
+                </div>
+            </section>            
+
+            </div>
+
+            <footer>
+                <p> <strong>Kevin Grove All Right Reserved &copy; 2022 - {{ currentYear }}</strong></p>
+            </footer>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>

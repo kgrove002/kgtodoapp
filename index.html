@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/about.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+        <title>KG To Do App Home Page</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="header">
+                <h1>KG To Do App</h1>
+                <h1>Developed by: Kevin Grove</h1>
+            </div>
+
+            <nav class="Nav">
+                <ul>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="https://kgrove.github.io/kgtodoapp/app">Web App Login</a>
+                </li>
+                <li>                
+                    <a href="HowTo.html">How To Use & Download</a>
+                </li>
+                <li>                
+                    <a href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </nav>
+
+            <div class="About container">
+                <h1 class="headings"> About This Application</h1>
+                    <div class="appAbout">
+                        <p>
+                            Greetings! Thank you for visiting the homepage of the KG To-Do App. This webpage features a to-do application designed to help individuals stay focused and organized. I originally developed this application for myself during college, and it helped me immensely. Now, I have upgraded it in hopes that it can help others achieve the same success.
+                        </p>
+                        <p>
+                            The web application was developed using React.js for the frontend and Express.js for the backend. The desktop application was built using C++ along with libraries that enable communication with SQL databases. The database is managed by PostgreSQL on a small server computer I use for projects like this.
+                        </p>
+
+                        <h1 class="headings">What Do We Do With the Provided Information?</h1>
+                        <p>
+                            During the setup process, you will be asked to provide some information, and you may wonder: what do we do with this information? The answer is simple—we do nothing beyond what is necessary to ensure your tasks remain separate from others. The information you provide is solely for organizational and security purposes, especially in case you need to recover your account in the future. Currently, there is no delete account option; however, if you decide you no longer wish to have your information stored within this application, please feel free to reach out to the developer via the contact page, and they will be happy to remove it for you.</p>
+
+                        <p>
+                            <strong>Thank you for stopping by, and we hope you will sign up and give this application a try. This tool is a great way to help add some structure to your life. Have a great day!</strong>
+                        </p>
+                    </div>
+            </div>
+
+            <footer>
+                <p> <strong>Kevin Grove All Right Reserved &copy; 2022 - {{ currentYear }}</strong></p>
+            </footer>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
